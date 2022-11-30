@@ -66,3 +66,53 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* story area section */
+
+#story-area {
+    height: 700px;
+    width: 100%;
+    background-image: url(../images/background1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* rules area section */
+
+#rules-area {
+    height: 700px;
+    width: 100%;
+    background-image: url(../images/background1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Footer */
+
+footer {
+    height: 150px;
+}
+
+.social {
+    text-align: center;
+}
+
+.social > li {
+    list-style: none;
+    display: inline;
+    
+}
+
+.social i {
+    color: #000;
+    font-size: 200%;
+    margin: 1%;
+    padding: 2%;
+}
+
+.social i:hover {
+    color:  rgba(243, 184, 23, 0.8);
+}
