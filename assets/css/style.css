@@ -14,6 +14,10 @@ body {
 
 #head {
     overflow: hidden;
+    background-image: url(../images/background2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #logo {
@@ -59,7 +63,7 @@ body {
 /* game area section */
 
 #game-area {
-    height: 700px;
+    height: 775px;
     width: 100%;
     background-image: url(../images/background1.jpg);
     background-position: center center;
@@ -94,6 +98,10 @@ body {
 
 footer {
     height: 150px;
+    background-image: url(../images/background2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .social {
@@ -109,8 +117,8 @@ footer {
 .social i {
     color: #000;
     font-size: 200%;
-    margin: 1%;
-    padding: 2%;
+    margin: 2%;
+    padding: 1%;
 }
 
 .social i:hover {
