@@ -14,7 +14,7 @@ body {
 
 #head {
     overflow: hidden;
-    background-image: url(../images/background2.jpg);
+    background-image: url(../images/background4.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,7 +74,7 @@ body {
 /* story area section */
 
 #story-area {
-    height: 700px;
+    height: 775px;
     width: 100%;
     background-image: url(../images/background1.jpg);
     background-position: center center;
@@ -85,7 +85,7 @@ body {
 /* rules area section */
 
 #rules-area {
-    height: 700px;
+    height: 775px;
     width: 100%;
     background-image: url(../images/background1.jpg);
     background-position: center center;
@@ -98,7 +98,7 @@ body {
 
 footer {
     height: 150px;
-    background-image: url(../images/background2.jpg);
+    background-image: url(../images/background4.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
