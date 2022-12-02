@@ -73,62 +73,12 @@ body {
 
 /* tic toc toe grid */
 
-.display {
-    color: white;
-    font-size: 70px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 50px;
+:root {
+    --orange: gold;
+    --winning-blocks: grey;
 }
 
-.hide {
-    display: none;
-}
-
-.container{
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
-    max-width: 300px;
-}
-
-.tile{
-    border: 1px solid palegoldenrod;
-    min-width: 100px;
-    min-height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    cursor: pointer;
-}
-
-.playerX{
-    color: rgba(255, 0, 0, 1);
-}
-
-.playerO{
-    color: rgba(0, 0, 0, 0.09);
-}
-
-.controls {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-}
-
-#reset {
-    background-color: rgba(243, 184, 23, 0.8);
-    color: black;
-    padding: 8px;
-    border: none;
-    font-size: 20px;
-    margin-left: 1em;
-    cursor: pointer;
-}
+.container
 
 /* story area section */
 
