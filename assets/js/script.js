@@ -22,7 +22,17 @@ function boxClicked(e) {
     }
 }
 
+restartBtn.addEventListener('click', restart)
 
+function restart() {
+    spaces.fill(null)
+
+    boxes.forEach( box => {
+        box.innerText = ''
+    })
+
+    currentPlayer = X_TEXT
+}
 
 
 startGame()
