@@ -96,6 +96,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
+    margin-left: 40px;
 }
 
 .box {
@@ -120,16 +121,18 @@ body {
 
 button {
     padding: 10px 20px;
-    margin-top: 40px;
+    margin-top: 70px;
     border-radius: 10px;
     background-color:#d4af37;
     color: white;
     border-color: r#d4af37;
+    transition: 200ms transform;
     font-size: 18px;
 }
 
-button :hover {
-    background-color: blue;
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
 }
 
 /* story area section */
