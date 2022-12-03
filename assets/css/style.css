@@ -80,7 +80,7 @@ body {
 
 :root {
     --orange: #d4af37;
-    --winning-blocks: grey;
+    --winning-blocks:white;
 }
 
 .container {
