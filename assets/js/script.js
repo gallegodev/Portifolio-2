@@ -56,9 +56,10 @@ restartBtn.addEventListener('click', restart)
 
 function restart() {
     spaces.fill(null)
-
+    count_plays = 0
     boxes.forEach( box => {
         box.innerText = ''
+        
     })
 
     currentPlayer = X_TEXT
