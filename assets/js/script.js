@@ -20,7 +20,7 @@ function boxClicked(e) {
         e.target.innerText = currentPlayer
 
         if(playerHasWon() !==false){
-            playerText = `${currentPlayer} won!`
+            alert(`Player ${currentPlayer} won!`)
             let winning_blocks = playerHasWon()
             count_plays = 10
 
@@ -48,6 +48,7 @@ function playerHasWon(){
         if(spaces [a] && (spaces[a] == spaces[b] && spaces[a] == spaces[c])) {
             return [a,b,c]
         }
+        
     }
     return false
 }
@@ -61,6 +62,8 @@ function restart() {
         box.innerText = ''
         
     })
+
+    
 
     currentPlayer = X_TEXT
 }
