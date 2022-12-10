@@ -20,11 +20,12 @@ function boxClicked(e) {
         e.target.innerText = currentPlayer
 
         if(playerHasWon() !==false){
-            alert(`Player ${currentPlayer} won!`)
+            var changeFrase = document.getElementById("mainFrase");
+            changeFrase.innerHTML = `Player ${currentPlayer} won!`;
             let winning_blocks = playerHasWon()
             count_plays = 10
-
         }
+        
         count_plays++
         currentPlayer = currentPlayer == X_TEXT ? O_TEXT : X_TEXT
     }
