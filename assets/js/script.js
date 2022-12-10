@@ -57,6 +57,8 @@ function playerHasWon(){
 restartBtn.addEventListener('click', restart)
 
 function restart() {
+    var changeFrase = document.getElementById("mainFrase");
+    changeFrase.innerHTML = "The God Anubis is challenging you mortal!";
     spaces.fill(null)
     count_plays = 0
     boxes.forEach( box => {
