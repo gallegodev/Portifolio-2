@@ -165,14 +165,16 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: rgba(255, 211, 98, 0.35);
+    color: white;
 }
 #rule-of-game h1{
     font-size: 50px;
+    color: rgba(255, 211, 98, 0.35);
 }
 
 #rule-of-game h2{
     font-size: 40px;
+    color: rgba(255, 211, 98, 0.35);
 }
 
 #rule-of-game p{
@@ -209,3 +211,19 @@ footer {
 .social i:hover {
     color:  rgba(243, 184, 23, 0.8);
 }
+
+/* Media queries */
+
+/*For larger to medium screens size from 760px wide and down*/
+
+@media screen and (max-width: 770px) {
+
+    #game-area {
+        height: 800px;
+    }
+
+    .social i{
+        padding: 5%;
+    }
+}
+
