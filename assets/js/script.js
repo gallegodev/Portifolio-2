@@ -24,18 +24,18 @@ function boxClicked(e) {
             changeFrase.innerHTML = `Player ${currentPlayer} won!`;
             let winning_blocks = playerHasWon()
             count_plays = 10
-        } 
+        }
         count_plays++
         currentPlayer = currentPlayer == X_TEXT ? O_TEXT : X_TEXT
 
-        }
-
-       if(count_plays === 9){
-        var changeFrase = document.getElementById("mainFrase");
-            changeFrase.innerHTML = "its a Draw!";
-       } 
-       
     }
+
+    if (count_plays === 9) {
+        var changeFrase = document.getElementById("mainFrase");
+        changeFrase.innerHTML = "its a Draw!";
+    }
+
+}
 
 
 
@@ -56,7 +56,7 @@ function playerHasWon() {
 
         if (spaces[a] && (spaces[a] == spaces[b] && spaces[a] == spaces[c])) {
             return [a, b, c]
-        } 
+        }
     }
     return false
 }
@@ -65,7 +65,7 @@ restartBtn.addEventListener('click', restart)
 
 function restart() {
     var changeFrase = document.getElementById("mainFrase");
-    changeFrase.innerHTML = "The God Anubis is challenging you mortal!";
+    changeFrase.innerHTML = "Make your move challenger!";
     spaces.fill(null)
     count_plays = 0
     boxes.forEach(box => {
