@@ -1,3 +1,5 @@
+/*Google Font Family link*/
+
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald&display=swap');
 
 * {
@@ -214,12 +216,12 @@ footer {
 
 /* Media queries */
 
-/*For larger to medium screens size from 760px wide and down*/
+/*For larger to medium screens size from 1000px wide and down*/
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1000px) {
 
-    #game-area {
-        height: 800px;
+    footer {
+        height: 180px;
     }
 
     .social i{
@@ -227,3 +229,31 @@ footer {
     }
 }
 
+
+
+/*For larger to medium screens size from 770px wide and down*/
+
+@media screen and (max-width: 770px) {
+
+    #rules-area {
+        height: 900px;
+    }
+
+    .social i{
+        padding: 5%;
+    }
+}
+
+/*For larger to medium screens size from 650px wide and down*/
+
+@media screen and (max-width: 650px) {
+
+    #rules-area {
+        height: 1100px;
+    }
+
+    .social i{
+        padding: 7%;
+    }
+
+}
