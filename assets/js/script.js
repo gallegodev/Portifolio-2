@@ -25,11 +25,16 @@ function boxClicked(e) {
             let winning_blocks = playerHasWon()
             count_plays = 10
         } 
+        count_plays++
+        currentPlayer = currentPlayer == X_TEXT ? O_TEXT : X_TEXT
 
         }
 
-        count_plays++
-        currentPlayer = currentPlayer == X_TEXT ? O_TEXT : X_TEXT
+       if(count_plays === 9){
+        var changeFrase = document.getElementById("mainFrase");
+            changeFrase.innerHTML = "its a Draw!";
+       } 
+       
     }
 
 
