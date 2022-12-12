@@ -165,7 +165,18 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #d4af37;
+    color: rgba(255, 211, 98, 0.35);
+}
+#rule-of-game h1{
+    font-size: 50px;
+}
+
+#rule-of-game h2{
+    font-size: 40px;
+}
+
+#rule-of-game p{
+    font-size: 20px;
 }
 
 /* Footer */
