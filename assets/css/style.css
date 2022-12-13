@@ -257,3 +257,156 @@ footer {
     }
 
 }
+
+/*For larger to medium screens size from 650px wide and down*/
+
+@media screen and (max-width: 650px) {
+
+    #game-area h1 {
+    font-size: 40px;
+
+}
+
+    #rules-area {
+        height: 1100px;
+    }
+
+    .social i{
+        padding: 7%;
+    }
+
+}
+
+
+/*For larger to medium screens size from 540px wide and down*/
+
+@media screen and (max-width: 540px) {
+
+#menu li{
+    margin-right: 30px;
+}
+}
+
+
+/*For larger to medium screens size from 490px wide and down*/
+
+@media screen and (max-width: 490px) {
+
+#logo {
+    font-size: 200%;
+}
+
+#game-area h1 {
+    font-size: 35px;
+}
+
+.box {
+    width: 130px;
+}
+
+#gameboard {
+    margin-left: 90px;
+}
+
+button {
+    margin-right: 15px;
+}
+
+}
+
+/*For larger to medium screens size from 440px wide and down*/
+
+@media screen and (max-width: 440px) {
+
+#game-area h1 {
+    font-size: 30px;
+}
+
+.container {
+    margin-left: 10px;
+}
+
+.social i {
+    padding: 10%;
+}
+
+}
+
+/*For larger to medium screens size from 425px wide and down*/
+
+@media screen and (max-width: 425px) {
+
+#logo {
+    font-size: 180%;
+}
+
+#menu {
+    font-size: 150%;
+}
+
+}
+
+/*For larger to medium screens size from 410px wide and down*/
+
+@media screen and (max-width: 410px) {
+
+.box {
+    width: 125px;
+}
+
+#game-area h1 {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+button {
+    margin-right: 30px;
+}
+
+
+}
+
+/*For larger to medium screens size from 390px wide and down*/
+
+@media screen and (max-width: 390px) {
+
+#menu {
+    font-size: 120%;
+}
+
+}
+
+/*For larger to medium screens size from 320px wide and down*/
+
+@media screen and (max-width: 320px) {
+
+#logo {
+    font-size: 250%;
+}
+#menu, #logo {
+    line-height: 60px;
+}
+
+#menu > li {
+    float: left;
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+.box {
+    height: 140px;
+}
+
+footer {
+    height: 150px;
+}
+
+.social i {
+    padding: 7%;
+}
+
+}
