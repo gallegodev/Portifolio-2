@@ -32,7 +32,7 @@ function boxClicked(e) {
 
     if (count_plays === 9) {
         var changeFrase = document.getElementById("mainFrase");
-        changeFrase.innerHTML = "its a Draw!";
+        changeFrase.innerHTML = "Its a Tie!";
     }
 
 }
