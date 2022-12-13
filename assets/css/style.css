@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    
+
 }
 
 body {
@@ -33,23 +33,23 @@ body {
     color: rgba(243, 184, 23, 0.8);
 }
 
-#menu{
+#menu {
     font-size: 170%;
 }
 
-#menu > li {
+#menu>li {
     float: right;
     list-style-type: none;
     margin-right: 50px;
 }
 
-#menu a{
+#menu a {
     text-decoration: none;
     color: white;
 }
 
 #menu a:hover {
-     color: rgba(243, 184, 23, 0.8);
+    color: rgba(243, 184, 23, 0.8);
 }
 
 .active {
@@ -58,8 +58,9 @@ body {
 
 /* menu navigation */
 
-#menu, #logo {
-     line-height: 75px;
+#menu,
+#logo {
+    line-height: 75px;
 }
 
 /* game area section */
@@ -76,7 +77,7 @@ body {
 #game-area h1 {
     font-size: 50px;
     color: #d4af37;
-    font-family:"Russo One", sans-serif;
+    font-family: "Russo One", sans-serif;
 }
 
 /* tic toc toe grid */
@@ -107,14 +108,14 @@ body {
     font-size: 50px;
     border-right: 2px solid;
     border-bottom: 2px solid;
-    font-family:"Russo One", sans-serif;
+    font-family: "Russo One", sans-serif;
 }
 
-.box:nth-child(3n){
+.box:nth-child(3n) {
     border-right: none;
 }
 
-.box:nth-child(6) ~ .box {
+.box:nth-child(6)~.box {
     border-bottom: none;
 }
 
@@ -122,12 +123,12 @@ button {
     padding: 10px 20px;
     margin-top: 70px;
     border-radius: 10px;
-    background-color:#d4af37;
+    background-color: #d4af37;
     color: white;
     border-color: r#d4af37;
     transition: 200ms transform;
     font-size: 18px;
-    font-family:"Zen Dots", sans-serif;
+    font-family: "Zen Dots", sans-serif;
 }
 
 button:hover {
@@ -147,25 +148,27 @@ button:hover {
     background-size: cover;
 }
 
-#rule-of-game{
+#rule-of-game {
     padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: black;
+    font-size: 20px;
 }
-#rule-of-game h1{
+
+#rule-of-game h1 {
     font-size: 50px;
-    color: black;
+    color: gold;
 }
 
-#rule-of-game h2{
+#rule-of-game h2 {
     font-size: 40px;
-    color: black;
+    color: white;
 }
 
-#rule-of-game p{
+#rule-of-game p {
     font-size: 20px;
 }
 
@@ -183,10 +186,10 @@ footer {
     text-align: center;
 }
 
-.social > li {
+.social>li {
     list-style: none;
     display: inline;
-    
+
 }
 
 .social i {
@@ -197,7 +200,7 @@ footer {
 }
 
 .social i:hover {
-    color:  rgba(243, 184, 23, 0.8);
+    color: rgba(243, 184, 23, 0.8);
 }
 
 /* Media queries */
@@ -210,8 +213,13 @@ footer {
         height: 180px;
     }
 
-    .social i{
+
+    .social i {
         padding: 5%;
+    }
+
+    #rule-of-game {
+        padding: 50px
     }
 }
 
@@ -225,7 +233,7 @@ footer {
         height: 900px;
     }
 
-    .social i{
+    .social i {
         padding: 5%;
     }
 }
@@ -234,30 +242,17 @@ footer {
 
 @media screen and (max-width: 650px) {
 
-    #rules-area {
-        height: 1100px;
-    }
 
-    .social i{
+    .social i {
         padding: 7%;
     }
 
-}
-
-/*For larger to medium screens size from 650px wide and down*/
-
-@media screen and (max-width: 650px) {
-
     #game-area h1 {
-    font-size: 40px;
+        font-size: 40px;
 
-}
-
-    #rules-area {
-        height: 1100px;
     }
 
-    .social i{
+    .social i {
         padding: 7%;
     }
 
@@ -268,9 +263,9 @@ footer {
 
 @media screen and (max-width: 540px) {
 
-#menu li{
-    margin-right: 30px;
-}
+    #menu li {
+        margin-right: 30px;
+    }
 }
 
 
@@ -278,25 +273,33 @@ footer {
 
 @media screen and (max-width: 490px) {
 
-#logo {
-    font-size: 200%;
-}
+    #logo {
+        font-size: 200%;
+    }
 
-#game-area h1 {
-    font-size: 35px;
-}
+    #game-area h1 {
+        font-size: 35px;
+    }
 
-.box {
-    width: 130px;
-}
+    .box {
+        width: 130px;
+    }
 
-#gameboard {
-    margin-left: 90px;
-}
+    #gameboard {
+        margin-left: 90px;
+    }
 
-button {
-    margin-right: 15px;
-}
+    button {
+        margin-right: 15px;
+    }
+
+    #rule-of-game h1 {
+        font-size: 45px;
+    }
+
+    #rule-of-game h2 {
+        font-size: 35px;
+    }
 
 }
 
@@ -304,17 +307,26 @@ button {
 
 @media screen and (max-width: 440px) {
 
-#game-area h1 {
-    font-size: 30px;
-}
+    #game-area h1 {
+        font-size: 30px;
+    }
 
-.container {
-    margin-left: 10px;
-}
+    .container {
+        margin-left: 10px;
+    }
 
-.social i {
-    padding: 10%;
-}
+    .social i {
+        padding: 10%;
+    }
+
+    #rule-of-game h1 {
+        font-size: 40px;
+    }
+
+    #rule-of-game h2 {
+        font-size: 30px;
+    }
+
 
 }
 
@@ -322,13 +334,21 @@ button {
 
 @media screen and (max-width: 425px) {
 
-#logo {
-    font-size: 180%;
-}
+    #logo {
+        font-size: 180%;
+    }
 
-#menu {
-    font-size: 150%;
-}
+    #menu {
+        font-size: 150%;
+    }
+
+    #rules-area {
+        height: 1000px;
+    }
+
+    #rule-of-game h1 {
+        font-size: 50px;
+    }
 
 }
 
@@ -336,22 +356,22 @@ button {
 
 @media screen and (max-width: 410px) {
 
-.box {
-    width: 125px;
-}
+    .box {
+        width: 125px;
+    }
 
-#game-area h1 {
-    font-size: 25px;
-    margin-right: 20px;
-}
+    #game-area h1 {
+        font-size: 25px;
+        margin-right: 20px;
+    }
 
-.container {
-    margin-left: 30px;
-}
+    .container {
+        margin-left: 30px;
+    }
 
-button {
-    margin-right: 30px;
-}
+    button {
+        margin-right: 30px;
+    }
 
 
 }
@@ -360,9 +380,41 @@ button {
 
 @media screen and (max-width: 390px) {
 
-#menu {
-    font-size: 120%;
+    #menu {
+        font-size: 120%;
+    }
+
+    #rule-of-game h1 {
+        font-size: 45px;
+    }
+
 }
+
+/*For larger to medium screens size from 350px wide and down*/
+
+@media screen and (max-width: 355px) {
+
+    #rules-area {
+        height: 1100px;
+    }
+    
+    #rule-of-game {
+        padding: 40px;
+    }
+
+    .social i {
+        padding: 9%;
+    }
+
+}
+
+/*For larger to medium screens size from 335px wide and down*/
+
+@media screen and (max-width: 335px) {
+    
+    #rule-of-game {
+        padding: 30px;
+    }
 
 }
 
@@ -370,39 +422,40 @@ button {
 
 @media screen and (max-width: 320px) {
 
-#logo {
-    font-size: 250%;
-}
+    #logo {
+        font-size: 250%;
+    }
 
-#menu {
-    font-size: 150%;
-}
+    #menu {
+        font-size: 150%;
+    }
 
-#menu, #logo {
-    line-height: 60px;
-}
+    #menu,
+    #logo {
+        line-height: 60px;
+    }
 
-#menu > li {
-    float: left;
-    list-style-type: none;
-    margin-left: 30px;
-}
+    #menu>li {
+        float: left;
+        list-style-type: none;
+        margin-left: 30px;
+    }
 
-#game-area h1 {
-    font-size: 35px;
-}
+    #game-area h1 {
+        font-size: 35px;
+    }
 
-.box {
-    height: 125px;
-    width: 124px;
-}
+    .box {
+        height: 125px;
+        width: 124px;
+    }
 
-footer {
-    height: 150px;
-}
+    footer {
+        height: 150px;
+    }
 
-.social i {
-    padding: 7%;
-}
+    .social i {
+        padding: 7%;
+    }
 
 }
