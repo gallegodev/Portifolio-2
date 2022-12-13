@@ -1,6 +1,6 @@
 /*Google Font Family link*/
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Zen+Dots&display=swap');
 
 * {
     margin: 0;
@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: "Oswald", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     color: #000;
 }
 
@@ -138,7 +138,7 @@ button:hover {
 #rules-area {
     height: 775px;
     width: 100%;
-    background-image: url(../images/background1.jpg);
+    background-image: url(../images/background7.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -150,16 +150,16 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: black;
 }
 #rule-of-game h1{
     font-size: 50px;
-    color: rgba(255, 211, 98, 0.35);
+    color: black;
 }
 
 #rule-of-game h2{
     font-size: 40px;
-    color: rgba(255, 211, 98, 0.35);
+    color: black;
 }
 
 #rule-of-game p{
@@ -370,6 +370,11 @@ button {
 #logo {
     font-size: 250%;
 }
+
+#menu {
+    font-size: 150%;
+}
+
 #menu, #logo {
     line-height: 60px;
 }
@@ -381,7 +386,8 @@ button {
 }
 
 .box {
-    height: 140px;
+    height: 125px;
+    width: 124px;
 }
 
 footer {
