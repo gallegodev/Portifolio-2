@@ -1,14 +1,14 @@
 let restartBtn = document.getElementById('restartBtn');
 let boxes = Array.from(document.getElementsByClassName('box'))
 
-const O_TEXT = "O";
-const X_TEXT = "X";
+let O_TEXT = "O";
+let X_TEXT = "X";
 
 let currentPlayer = X_TEXT;
 let spaces = Array(9).fill(null);
 let count_plays = 0
 
-const startGame = () => {
+let startGame = () => {
     boxes.forEach(box => box.addEventListener('click', boxClicked))
 }
 
@@ -20,10 +20,10 @@ function boxClicked(e) {
         e.target.innerText = currentPlayer
 
         if (playerHasWon() !== false) {
-            var changeFrase = document.getElementById("mainFrase");
+            let changeFrase = document.getElementById("mainFrase");
             changeFrase.innerHTML = `Player ${currentPlayer} won!`;
-            let winning_blocks = playerHasWon()
-            count_plays = 10
+            let winning_blocks = playerHasWon();
+            count_plays = 10;
         }
         count_plays++
         currentPlayer = currentPlayer == X_TEXT ? O_TEXT : X_TEXT
@@ -31,7 +31,7 @@ function boxClicked(e) {
     }
 
     if (count_plays === 9) {
-        var changeFrase = document.getElementById("mainFrase");
+        let changeFrase = document.getElementById("mainFrase");
         changeFrase.innerHTML = "Its a Tie!";
     }
 
@@ -39,7 +39,7 @@ function boxClicked(e) {
 
 
 
-const winningCombos = [
+let winningCombos = [
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
@@ -64,7 +64,7 @@ function playerHasWon() {
 restartBtn.addEventListener('click', restart)
 
 function restart() {
-    var changeFrase = document.getElementById("mainFrase");
+    let changeFrase = document.getElementById("mainFrase");
     changeFrase.innerHTML = "Make your move challenger!";
     spaces.fill(null)
     count_plays = 0
